@@ -1,6 +1,5 @@
 @import "https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900";
 body {
-  background:linear-gradient(to bottom left, rgb(59, 45, 139), rgb(57, 57, 177));
   color: #3E363F;
   font-family: "Lato", sans-serif;
   height: 100vh;
@@ -18,26 +17,24 @@ body {
   left: 0;
 }
 
-.Modal {
+.Card {
   background:white;
   border-radius: 20px;
   padding: 20px;
   width: 300px;
   height: 300px;
-  box-shadow: 1px 1em 1em  #3E363F;
+  box-shadow: 0px 1em 5em 0px rgb(19, 19, 19);
   
 }
 
 .Input {
   display: flex;
   flex-direction: row-reverse;
-  border-bottom: 1px solid rgba(255, 252, 232, 0.1);
   padding-bottom: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   padding-top: 10px;
 }
 .Input input {
-   
   outline: none;
   border: 0;
   color: #3E363F;
@@ -47,13 +44,14 @@ body {
   font-size: 14px;
   font-weight: 300;
 }
+
 .Input input:focus ~ label {
   opacity: 1;
+  
 }
 
 .Input label {
- 
-  font-family: FontAwesome;
+  font-family: Lato;
   font-size: 13px;
   opacity: .1;
   transition: opacity .5s ease;
@@ -69,9 +67,9 @@ body {
 
 button {
   align-items: center;
-  background:#ED553B;
+  background:linear-gradient(to bottom left,rgb(33, 97, 224) , rgb(92, 92, 170));
   border: 0;
-  border-radius: 3px;
+  border-radius: 20px;
   color: white;
   display: flex;
   font-family: "Lato", sans-serif;
@@ -84,15 +82,11 @@ button {
   text-transform: uppercase;
   width: 100%;
 }
-button .fa {
-  font-size: 12px;
-  margin-left: auto;
-  position: relative;
-  top: 1px;
-}
+
 button:hover {
-  transform: scale(1.02);
-  box-shadow: 1px 1em 1em  rgb(136, 48, 33)
+  transform: scale(1.01);
+  transition: ease-in .12s;
+  box-shadow: 1px 1em 1em  rgba(33, 35, 136, 0.342)
 }
 button:active {
   transform: scale(0.99);
