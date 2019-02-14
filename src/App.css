@@ -26,6 +26,7 @@ body {
   box-shadow: 6px .1em .8em 0px rgb(92, 92, 170);
   transform: rotateX(55deg) rotateZ(45deg);
   perspective: 50em;
+  transition: .4s ease-in-out;
   
 }
 .Card:hover{
