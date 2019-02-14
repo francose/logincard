@@ -18,30 +18,39 @@ body {
 }
 
 .Card {
-  background:white;
+  background:linear-gradient(to bottom left,rgb(33, 97, 224) , rgb(92, 92, 170));
   border-radius: 20px;
   padding: 20px;
   width: 300px;
-  height: 300px;
-  box-shadow: 0px 1em 5em 0px rgb(19, 19, 19);
+  height: 350px;
+  box-shadow: 6px .1em .8em 0px rgb(92, 92, 170);
+  transform: rotateX(55deg) rotateZ(45deg);
+  perspective: 50em;
   
 }
+.Card:hover{
+   box-shadow: 0px 8em 14em 0px rgb(92, 92, 170);
+   transform: rotateX(0deg);
+   transition: .4s ease-in-out;
+}
+
+
 
 .Input {
   display: flex;
   flex-direction: row-reverse;
   padding-bottom: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   padding-top: 10px;
 }
 .Input input {
   outline: none;
   border: 0;
-  color: #3E363F;
+  color: white;
   background: transparent;
   font-family: "Lato", sans-serif;
   flex: 1 0 auto;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 300;
 }
 
@@ -49,34 +58,25 @@ body {
   opacity: 1;
   
 }
-
-.Input label {
+.Input input::placeholder {
   font-family: Lato;
-  font-size: 13px;
-  opacity: .1;
+  font-size: 18px;
+  color:rgba(255, 255, 255, 0.438);
   transition: opacity .5s ease;
-}
-.Input label::before {
-  align-items: center;
-  color: #3E363F;
-  display: flex;
-  height: 30px;
-  justify-content: center;
-  width: 30px;
 }
 
 button {
   align-items: center;
-  background:linear-gradient(to bottom left,rgb(33, 97, 224) , rgb(92, 92, 170));
+  background:white;
   border: 0;
   border-radius: 20px;
-  color: white;
+  color: rgb(8, 72, 248);
   display: flex;
   font-family: "Lato", sans-serif;
   font-size: 13px;
   font-weight: 500;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 30px;
   outline: none;
   padding: 10px 9px 10px 11px;
   text-transform: uppercase;
@@ -86,7 +86,7 @@ button {
 button:hover {
   transform: scale(1.01);
   transition: ease-in .12s;
-  box-shadow: 1px 1em 1em  rgba(33, 35, 136, 0.342)
+  box-shadow: 1px 1em 1em  rgba(184, 184, 184, 0.3)
 }
 button:active {
   transform: scale(0.99);

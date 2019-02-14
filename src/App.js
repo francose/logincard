@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Card from './Components/Card.jsx';
-// import anime from 'animejs';
+import anime from 'animejs';
 
 
 

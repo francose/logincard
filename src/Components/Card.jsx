@@ -6,7 +6,7 @@ function Input(props){
         <div className="Input">
             <input
                 id={props.id}
-                autoComplete="false"
+                autoComplete="off" 
                 required
                 type={props.type}
                 placeholder={props.placeholder}
@@ -21,8 +21,7 @@ export default class Card extends Component {
         return <div>
             <div className="Card">
                 <form
-                    onSubmit={this.props.onSubmit}
-                    className="ModalForm">
+                    onSubmit={this.props.onSubmit}>
                     <Input
                         id="name"
                         type="text"
@@ -30,7 +29,7 @@ export default class Card extends Component {
                     <Input
                         id="username"
                         type="email"
-                        placeholder="joe@doe.com" />
+                        placeholder="joe@example.com" />
                     <Input
                         id="password"
                         type="password"
